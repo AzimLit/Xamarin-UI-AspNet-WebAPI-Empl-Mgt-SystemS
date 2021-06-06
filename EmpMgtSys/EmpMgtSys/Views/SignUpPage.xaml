@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EmpMgtSys.Views.SignUpPage">
+    
+    <ContentPage.Content>
+        
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="80*"/>
+                <RowDefinition Height="10*"/>
+            </Grid.RowDefinitions>
+
+            <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Margin="10,10,0,10" Padding="0,30,0,0">
+                <Label FontSize="Medium" HorizontalOptions="Center" TextColor="Green"/>
+            </StackLayout>
+
+            <Grid VerticalOptions="Center" Grid.Row="1" Margin="20,0,20,0">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                
+                <!-- User Name-->
+                <Entry Grid.Row="2" x:Name="UserNameEntry" Text="{Binding UserName}" 
+                       Placeholder="User name" ReturnType="Next" Keyboard="Text" FontSize="Medium">
+                </Entry>
+                
+                <!-- Email-->
+                <Entry Grid.Row="3" x:Name="EmailEntry" Text="{Binding emailId}" 
+                       Placeholder="Email ID" ReturnType="Next" Keyboard="Email"  FontSize="Medium">
+                    <Entry.Behaviors>
+                        <!-- <local:emailvalidationbehavior></local:emailvalidationbehavior> -->
+                    </Entry.Behaviors>
+                </Entry>
+                
+                <!-- PassWord-->
+                <Entry Grid.Row="4" x:Name="PasswordEntry" Text="{Binding Password}" TextChanged="PasswordEntry_TextChanged"
+                       Placeholder="PassWord" ReturnType="Next" IsPassword="True" Keyboard="Text" FontSize="Medium">
+                </Entry>
+                
+            </Grid>
+            
+        </Grid>
+
+    </ContentPage.Content>
+</ContentPage>

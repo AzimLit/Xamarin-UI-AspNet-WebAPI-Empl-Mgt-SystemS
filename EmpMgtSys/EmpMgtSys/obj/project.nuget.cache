@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "aWfUPZ45o35IEVEaNcZ+0348CkXkFz6qgVkQHZfzdKOt06Q/H7AZpeTI0XYgcUCsjHRxmhWlT/tmWgdH1A1zuA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Azim Litanga\\source\\repos\\EmpMgtSys\\EmpMgtSys\\EmpMgtSys\\EmpMgtSys.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Azim Litanga\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Azim Litanga\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Azim Litanga\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "C:\\Users\\Azim Litanga\\.nuget\\packages\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512"
+  ],
+  "logs": []
+}

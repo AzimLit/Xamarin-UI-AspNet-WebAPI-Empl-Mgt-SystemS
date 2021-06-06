@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundImageSource="AzHome.png"
+             x:Class="EmpMgtSys.Views.HomePage">
+    
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+            </Grid.RowDefinitions>
+            
+            <StackLayout HorizontalOptions="Center" VerticalOptions="Center" 
+                         Margin="10,10,0,10" Padding="0,30,0,0">
+
+                <Label Text="Welcome to BrainTech" FontSize="Medium" 
+                       HorizontalOptions="Center" TextColor="Green"/>
+
+            </StackLayout>
+            
+            <Grid Grid.Row="1" Margin="20,0,20,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="40*"/>
+                    <ColumnDefinition Width="40*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Row="4" Grid.Column="0" BackgroundColor="Green" x:Name="Login" 
+                        FontSize="Medium" BorderWidth="1" TextColor="White" Text="Login" Clicked="Login_Clicked"/>
+
+                <Button Grid.Row="4" Grid.Column="1" BackgroundColor="Green" x:Name="SignUp" 
+                        FontSize="Medium" BorderWidth="1" TextColor="White" Text="Sign Up" Clicked="SignUp_Clicked"/>
+
+
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
